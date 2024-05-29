@@ -1,0 +1,264 @@
+<!-- 폰트: 어도비 폰트는 웹 ㅍ,로젝트 추가 후 스크립트 복사 후 헤드로 복붙 후 폰트페이스 복붙 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'aap8wwi',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'aap8wwi',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+<script src="wow.js"></script>
+<script>new WOW().init();</script>
+
+	<title>지구를 지켜라!</title>
+</head>
+<style type="text/css">
+@font-face{font-family: rixdongnimgothic-pro, sans-serif;
+           font-style: normal;
+           font-weight: 400;}
+@font-face{font-family: "rixsingose-pro", sans-serif;
+           font-style: normal;
+           font-weight: 500;}
+
+.container {
+				    width: 1200px;
+				    position: relative;
+				    overflow: hidden;
+				}
+
+p, br {
+		    opacity: 1;
+		    transform: translateX(100%);
+		    animation: fadeIn 1s forwards;
+		}
+
+.fade-in-1 { animation-delay: 0.5s; animation-name: fadeInLeft;}
+.fade-in-2 { animation-delay: 1.5s; animation-name: fadeInRight;}
+.fade-in-3 { animation-delay: 2.5s; animation-name: fadeInLeft;}
+.fade-in-4 { animation-delay: 3.5s; animation-name: fadeInRight;}
+.fade-in-5 { animation-delay: 4.5s; animation-name: fadeInLeft;}
+.fade-in-6 { animation-delay: 5.5s; animation-name: fadeInRight;}
+.fade-in-2, .fade-in-4, .fade-in-6 {
+    text-align: right;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in-7 { animation-delay: 0.5s; animation-name: fadeIn forwards;}
+.fade-in-8 { animation-delay: 1s; animation-name: fadeIn forwards;}
+.fade-in-9 { animation-delay: 2s; animation-name: fadeIn forwards;}
+.fade-in-10 { animation-delay: 3s; animation-name: fadeIn forwards;}
+.fade-in-11 { animation-delay: 4s; animation-name: fadeIn forwards;}
+.fade-in-12 { animation-delay: 5s; animation-name: fadein forwards;}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-scroll {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+body, h1, h2, h3, p{margin: 0; padding: 0;}
+html,body{cursor: url("img/cursor.png"), auto;}
+body{background-color: white;}
+h1{font-family: rixdongnimgothic-pro;
+   font-size: 100px;
+   color: white;}
+h2{font-family: rixdongnimgothic-pro;
+   font-size: 50px;
+   color: white;}
+h3{font-family: rixdongnimgothic-pro;
+   font-size: 30px;
+   color: white;}
+
+
+.flex {
+		   display: flex;
+		   flex-wrap: wrap;
+		   gap: 20px 10%;
+		   justify-content: center;}
+
+.flex > div > p {
+    opacity: 1;
+    transform: none;
+    animation: none;
+    text-align: center;
+}
+
+.hdr-bg{background: url(img/header-bg.jpg);
+        background-size: cover;}
+.hdr-title{width:1000px; margin: auto; padding-top: 250px; padding-left: 220px;}
+.hdr-txt{width:1000px; margin: auto; padding: 350px 0px 600px 250px;}
+.p-신고딕-black{font-family: "rixsingose-pro", sans-serif;
+			         font-size: 1.2rem;
+			         color: black;
+			         line-height: 50px;}
+.p-신고딕-white{font-family: "rixsingose-pro", sans-serif;
+			         font-size: 1.7rem;
+			         color: white;
+			         line-height: 50px;}
+.float-right{float: right;}
+.content2{width: 1000px; margin: auto;}
+
+.st1-wrap{width: 1520px; height: 700px; margin: 0px auto;
+		  	  background: url(img/이병구.gif);
+          background-size: cover;
+          text-align: center;}
+.st2-wrap{width: 1520px; height: 1000px; margin: 0px auto; padding-top: 50px; padding-bottom: 200px;}
+.st3-wrap{width: 1520px; height: 4500px; margin: 0px auto;
+		  background: url(img/1-1-bg.jpg);
+		  background-size: cover;}
+.st4-wrap{width: 1520px; height: 700px; margin: 0px auto;
+		  	  background: url(img/외계인.gif);
+          background-size: cover;
+          text-align: center;}
+.st5-wrap{width: 1520px; height: 400px; margin: 0px auto; padding-top: 50px; padding-bottom: 200px;}
+.st6-wrap{width: 1520px; height: 5700px; margin: 0px auto;
+		  background: url(img/2-1-bg.jpg);
+		  background-size: cover;}
+
+
+.pd-top40{padding-top: 40px;}
+.pd-top70{padding-top: 70px;}
+.pd-top100{padding-top: 100px;}
+.pd-top200{padding-top: 200px;}
+.pd-top450{padding-top: 450px;}
+.pd-top500{padding-top: 500px;}
+.pd-bottom40{padding-bottom: 40px;}
+.pd-bottom60{padding-bottom: 60px;}
+.pd-bottom100{padding-bottom: 100px;}
+.pd-left20{padding-left: 20px;}
+.pd-left70{padding-left: 70px;}
+.pd-left120{padding-left: 120px;}
+.pd-left150{padding-left: 150px;}
+.pd-left180{padding-left: 180px;}
+.pd-left200{padding-left: 200px;}
+.pd-left1200{padding-left: 1200px;}
+.pd-right70{padding-right: 70px;}
+
+
+</style>
+<body>
+	<header class="hdr-bg">
+		<img src="img/지구를지켜라.png" class="hdr-title">
+		<img src="img/header-txt.png" class="hdr-txt">
+	</header>
+	<section>
+		<div class="st1-wrap">
+			<img src="img/1-title.png" width="1300px" class="pd-top450">
+		</div>
+	</section>
+	<section>
+		<div class="st2-wrap p-신고딕-black">
+				<p class="wow fade-in-1 pd-top40 pd-bottom40 pd-left70">기자: 안녕하세요, 자기소개 부탁드립니다.</p>
+        <p class="wow fade-in-2 pd-top40 pd-bottom40 pd-right70">병구: 나는 지구용사 이병구요.</p>
+        <p class="wow fade-in-3 pd-top40 pd-bottom40 pd-left70">기자: 병구씨는 어쩌다 지구를 지키는 용사가 될 결심을 하셨나요?</p>
+        <p class="wow fade-in-4 pd-top40 pd-bottom40 pd-right70">병구: 나는 내 가족들을 모두 외계인에게 잃었어요.
+            <br>광산에 깔려 팔이 잘린 아버지도,
+            <br>독한 가스냄새 마시다가 식물인간이 된 어머니도,
+            <br>그리고 불 탄 공장에서 나오지 못한 누나도...</p>
+        <p class="wow fade-in-5 pd-top40 pd-bottom40 pd-left70">기자: 외계인.. 이라면 누굴 말씀하시는 거죠?</p>
+        <p class="wow fade-in-6 pd-top40 pd-bottom40 pd-right70">병구: 그저 열심히 일했을 뿐인 우리의 피를 못 본 척하는 인간들...
+            <br>금수만도 못한 걔넨 외계인이 아니고선 설명할 수 없어!</p>
+		</div>
+	</section>
+	<section>
+    <div class="st3-wrap p-신고딕-white">
+      <img class="pd-left150 pd-top200" src="img/1-1-txt.png" width="1200px">
+        <div class="flex pd-top100">
+            <div>
+                <img src="img/spc.png" width="300px" style="display: block; margin: auto;">
+                <p class="pd-top40"> 23살 짜리가 <br> 빵 만들다가... </p>
+            </div>
+            <div>
+                <img src="img/삼성반도체.png" width="300px" style="display: block; margin: auto;">
+                <p class="pd-top40"> 20살도 안된 애가 <br> 휴대전화 만들다가... </p>
+            </div>
+            <div>
+                <img src="img/우체국.png" width="300px" style="display: block; margin: auto;">
+                <p class="pd-top40"> 이제 30인 사람이 <br> 택배 업고 다니다가... </p>
+            </div>
+   		  </div>
+          <div class="pd-top500">
+          	<div>
+          	   <img src="img/1.jpg" width="700px" class="wow fade-in-scroll fade-in-7 pd-bottom40 pd-left70">
+            </div>
+          	<img src="img/2.jpg" width="900px" class="wow fade-in-scroll fade-in-8 pd-bottom40 float-right pd-right70">
+          	<img src="img/3.jpg" width="900px" class="wow fade-in-scroll fade-in-9 pd-bottom40 pd-left70">
+          	<img src="img/4.jpg" width="1000px" class="wow fade-in-scroll fade-in-10 pd-bottom40 float-right pd-right70">
+          	<img src="img/5.jpg" width="700px" class="wow fade-in-scroll fade-in-11 pd-bottom40 pd-left70">
+          	<img src="img/6.jpg" width="900px" class="wow fade-in-scroll fade-in-12 pd-bottom40 float-right pd-right70">
+          </div>
+          <img class="pd-left150 pd-top200" src="img/1-2-txt.png" width="1200px">
+    </div>
+    </section>
+    <section>
+        <div class="st4-wrap">
+            <img src="img/2-title.png" width="1300px" class="pd-top450">
+        </div>
+    </section>
+	<section>
+		<div class="st5-wrap p-신고딕-black">
+        <p class="wow fade-in-2 pd-top40 pd-bottom40 pd-right70">병구: 이 외계인들의 가장 못된 점은 우리를 기만한다는 거야.</p>
+        <p class="wow fade-in-3 pd-top40 pd-bottom40 pd-left70">기자: 기만이라면.. 어떤 행동인가요?</p>
+        <p class="wow fade-in-4 pd-top40 pd-bottom40 pd-right70">병구: 탁상공론만큼 사람을 피말리는 게 없어... </p>
+		</div>
+	</section>
+	<section>
+    <div class="st6-wrap">
+    <img class="pd-left180 pd-top200" src="img/2-1-txt.png" width="1200px">
+	</section>
+	<section>
+		<div class="pd-top100 p-신고딕-white">
+			<h3> 중대재해처벌법 </h3>
+			<p> : 기업경영책임자가 안전 확보 의무를 소홀히 해 사망사고 등 중대재해가 발생할 <br>경우 1년 이상의 징역형 또는 10억원 이하의 벌금으로 처벌하도록 규정하는 법이다.</p>
+		</div>
+	</section>
+</body>
+</html>
