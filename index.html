@@ -1,5 +1,3 @@
-<!-- 폰트: 어도비 폰트는 웹 ㅍ,로젝트 추가 후 스크립트 복사 후 헤드로 복붙 후 폰트페이스 복붙 -->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -88,7 +86,6 @@ p, br {
 .fade-in-11 { animation-delay: 4s; animation-name: fadeIn forwards;}
 .fade-in-12 { animation-delay: 5s; animation-name: fadein forwards;}
 
-
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -104,6 +101,11 @@ p, br {
     opacity: 0;
     animation: fadeInUp 1s ease forwards;
 }
+.fade-in-scroll.font-color-yellow, .망치 {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+  }
+
 body, h1, h2, h3, p{margin: 0; padding: 0;}
 html,body{cursor: url("img/cursor.png"), auto;}
 body{background-color: white;}
@@ -124,14 +126,19 @@ h3{font-family: rixdongnimgothic-pro;
 		   gap: 20px 10%;
 		   justify-content: center;}
 
-.flex > div > p {
-    opacity: 1;
-    transform: none;
-    animation: none;
-    text-align: center;
-}
+.flex > div > p, br {
+									    opacity: 1;
+									    transform: none;
+									    animation: none;
+									    text-align: center;
+									}
+.p-신고딕-white2 p, .p-신고딕-white2 br {
+      opacity: 1;
+      transform: translateX(0);
+      animation: none;
+    }
 
-.hdr-bg{background: url(img/header-bg.jpg);
+.hdr-bg{background: url(img/header-bg2.jpg);
         background-size: cover;}
 .hdr-title{width:1000px; margin: auto; padding-top: 250px; padding-left: 220px;}
 .hdr-txt{width:1000px; margin: auto; padding: 350px 0px 600px 250px;}
@@ -143,8 +150,16 @@ h3{font-family: rixdongnimgothic-pro;
 			         font-size: 1.7rem;
 			         color: white;
 			         line-height: 50px;}
+.p-신고딕-white2{font-family: "rixsingose-pro", sans-serif;
+							   font-size: 2.5rem;
+							   color: white;
+							   line-height: 70px;}
 .float-right{float: right;}
 .content2{width: 1000px; margin: auto;}
+.highlight {color: red;}
+.font-color-white{color: white;}
+.font-color-yellow{color: #f4d13e;}
+
 
 .st1-wrap{width: 1520px; height: 700px; margin: 0px auto;
 		  	  background: url(img/이병구.gif);
@@ -159,12 +174,17 @@ h3{font-family: rixdongnimgothic-pro;
           background-size: cover;
           text-align: center;}
 .st5-wrap{width: 1520px; height: 400px; margin: 0px auto; padding-top: 50px; padding-bottom: 200px;}
-.st6-wrap{width: 1520px; height: 5700px; margin: 0px auto;
+.st6-wrap{width: 1520px; height: 3900px; margin: 0px auto;
 		  background: url(img/2-1-bg.jpg);
 		  background-size: cover;}
+.st7-wrap{width: 1520px; height: 700px; margin: 0px auto;
+		  	  background: url(img/외계인고문.gif);
+          background-size: cover;
+          text-align: center;}
 
 
 .pd-top40{padding-top: 40px;}
+.pd-top50{padding-top: 50px;}
 .pd-top70{padding-top: 70px;}
 .pd-top100{padding-top: 100px;}
 .pd-top200{padding-top: 200px;}
@@ -175,6 +195,7 @@ h3{font-family: rixdongnimgothic-pro;
 .pd-bottom100{padding-bottom: 100px;}
 .pd-left20{padding-left: 20px;}
 .pd-left70{padding-left: 70px;}
+.pd-left100{padding-left: 100px;}
 .pd-left120{padding-left: 120px;}
 .pd-left150{padding-left: 150px;}
 .pd-left180{padding-left: 180px;}
@@ -252,13 +273,40 @@ h3{font-family: rixdongnimgothic-pro;
 	</section>
 	<section>
     <div class="st6-wrap">
-    <img class="pd-left180 pd-top200" src="img/2-1-txt.png" width="1200px">
-	</section>
-	<section>
-		<div class="pd-top100 p-신고딕-white">
-			<h3> 중대재해처벌법 </h3>
-			<p> : 기업경영책임자가 안전 확보 의무를 소홀히 해 사망사고 등 중대재해가 발생할 <br>경우 1년 이상의 징역형 또는 10억원 이하의 벌금으로 처벌하도록 규정하는 법이다.</p>
+	    <img class="pd-left180 pd-top200" src="img/2-1-txt.png" width="1200px">
+			<div class="pd-top100 p-신고딕-white2">
+				<img src="img/중대재해처벌법.png" class="pd-left70 pd-top200" width="400px">
+				<p class="pd-left70"> : 기업경영책임자가 안전 확보 의무를 소홀히 해 사망사고 등 중대재해가 발생할 <br>경우 1년 이상의 징역형 또는 10억원 이하의 벌금으로 처벌하도록 규정하는 법이다.</p>
+
+				<p class="pd-left100 pd-top200"> 시행 대상은 <span class="highlight">상시 고용인 5인 이상</span>의 사업장에서 일어난 산재를 기준으로 한다.</p>
+				<p class="pd-left100 pd-top70 font-color-yellow wow fade-in-scroll ">"치킨을 튀기다가 2명이나 화상을 입고 <br>아르바이트를 잘렸는데... 저라고 어떻게 안심해요. <br>그 와중에 우리 사장은 눈하나 깜짝 안하고 신입을 뽑는다구요."<br> -3인 이하 사업장 아르바이트생 김00씨(24세)-</p>
+
+				<p class="pd-left100 pd-top200">대상 사업장은 <span class="hilight">의무 사항으로서 안전보건관리담당자가 감독하는 사업장의 자발적</span> <span class="hilight"><br>안전보건관리체계를 필요</span>로 한다.</p>
+				<p class="pd-left100 pd-top70 font-color-yellow wow fade-in-scroll">“가맹점 운영하면서 나랑 우리 집사람까지 겨우 6명이 일하는데, <br>우리가 무슨 여력이 있어서 안전관리자를 쓸 수 있겠어... <br>자영업하기 힘든 나라는 아주 그냥 어떻게든 목을 죄여!” <br>-프렌차이즈 사업장 점주 금00씨(62세)-</p>
+
+				<p class="pd-left100 pd-top200">처벌 기준의 경우, <span class="hilight">사망자가 1명 이상 혹은 동일한 사고로 인한 부상자가 2명 이상,</span> <span class="hilight"><br>또한 동일 한 유해요인으로 직업성 질병작 1년 이내 3명 이상</span> 발생하는 경우들이다.</p>
+				<p class="pd-left100 pd-top70 font-color-yellow wow fade-in-scroll ">“저는 일하다가 다친 거에 대한 보상 돈으로만은 못받아요. <br>사과는 커녕 병원비도 아깝다며 비아냥거리던 사장인데 <br>다친 것도 안타깝게 나 하나라 어떻게 법으로 복수할 수도 없고...”<br>-가구제작소 직원 출신 정00씨(33세)-</p>
+			</div>
+			<img class="pd-left150 pd-top200" src="img/2-2-txt.png" width="1200px">
 		</div>
 	</section>
+	<section>
+		<div class="st7-wrap">
+			<img src="img/3-title.png" width="1300px" class="pd-top450">
+		</div>
+	</section>
+	<section>
+	<div class="st2-wrap p-신고딕-black">
+			<p class="wow fade-in-1 pd-top40 pd-bottom40 pd-left70">기자: 가족 분들을 모두 노동사고로 잃은 병구씨에겐 <br>외계인들이 더욱 미울 것 같아요.</p>
+      <p class="wow fade-in-2 pd-top40 pd-bottom40 pd-right70">병구: 나도 참 많이 절규했고 아직도 슬퍼하고 있어요.<br>근데 나는 절규하는 것에서 멈추지 않습니다.</p>
+      <p class="wow fade-in-3 pd-top40 pd-bottom40 pd-left70">기자: 병그게 무슨 말씀이시죠?</p>
+      <p class="wow fade-in-4 pd-top40 pd-bottom40 pd-right70">병구: 내가 말이야, 외계인을 진짜로 고문해봤거든요? <br>죽이기까지는 못했지만...</p>
+      <p class="wow fade-in-5 pd-top40 pd-bottom40 pd-left70">기자: 이것 참 오싹한 얘기인데요...</p>
+      <p class="wow fade-in-6 pd-top40 pd-bottom40 pd-right70">병구: 때밀이랑 물파스만 있으면 됩니다.</p>
+	</div>
+</section>
+<section>
+	
+</section>
 </body>
 </html>
